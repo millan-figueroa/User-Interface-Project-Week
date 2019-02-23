@@ -1,4 +1,4 @@
-.flex-row-btw(@ai-choice: center) {
+.flex-col-center(@ai-choice: center) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,6 +12,14 @@
     align-items: flex-start;
 }
 
+.flex-col-center(@ai-choice: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: @ai-choice;
+}
+
+// Content Styling
 .button(@text-color: @btn-color, @bg-color: @gen-bg-color) {
     color: @text-color;
     background-color: @bg-color;
@@ -26,3 +34,15 @@
         border: 1px solid @bg-color;
     }
 }
+
+.desktop-view() {
+    .img-mobile {
+        display: none;
+    }
+}
+
+.mobile-view() {
+    .img-desktop {
+        display: none;
+    }
+}    
