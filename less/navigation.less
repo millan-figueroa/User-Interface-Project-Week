@@ -1,4 +1,6 @@
-.menu {    
+// Menu
+
+.menu {
     width: 100%;
     background: @nav-bg-color;
     color: @nav-color;
@@ -13,6 +15,13 @@
             margin: 4.3% 4.7%;
         }
     }
+
+
+    a {
+        font-weight: bold;
+        color: @nav-color;
+    }
+
 }
 
 // Navigation
@@ -50,4 +59,8 @@
 
 .nav-links {
     .flex-col-center(flex-start);
-} 
+}
+
+a.nav-link-selected {
+    color: @gen-color;
+}

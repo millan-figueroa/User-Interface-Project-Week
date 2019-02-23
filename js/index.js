@@ -2,6 +2,7 @@
 
 // Navigation
 
+
 class NavLink {
     constructor (link) {
         this.link = link;
