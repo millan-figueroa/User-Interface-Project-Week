@@ -172,6 +172,7 @@ p {
 a {
   color: #222222;
   text-decoration: none;
+  font-size: 30px;
 }
 @media (min-width: 600px) {
   .img-mobile {
@@ -241,6 +242,9 @@ a {
 }
 a.nav-link-selected {
   color: #222222;
+}
+a.nav-link:hover {
+  color: aqua;
 }
 footer {
   max-width: 1024px;
@@ -397,6 +401,7 @@ footer .copyright p {
   width: 135px;
   text-align: center;
   padding: 3% 0;
+  border-radius: 15px;
 }
 @media (max-width: 900px) {
   .page-content .intro-content .intro-section .intro-text .btn {
@@ -491,11 +496,24 @@ footer .copyright p {
 .services .main-content {
   margin-top: 0;
 }
+@media (max-width: 600px) {
+  .services .main-content {
+    margin: 15% 4.7% 0;
+  }
+}
 .services .main-content .tab-container .tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .services .main-content .tab-container .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .services .main-content .tab-container .tabs .tab-link {
   color: #222222;
@@ -504,6 +522,7 @@ footer .copyright p {
   width: 135px;
   text-align: center;
   padding: 3% 0;
+  border-radius: 15px;
   width: 21.5%;
   font-size: 20px;
   font-weight: bold;
@@ -528,9 +547,23 @@ footer .copyright p {
 .services .main-content .tab-container .tabs .tab-link:hover a {
   color: #FFFFFF;
 }
+@media (max-width: 900px) {
+  .services .main-content .tab-container .tabs .tab-link {
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .services .main-content .tab-container .tabs .tab-link {
+    font-size: 20px;
+    margin-bottom: 6.5%;
+  }
+}
 .services .main-content .tab-container .tabs .tab-link-selected {
   color: #FFFFFF;
   background-color: #5E9FB9;
+  border: 1px solid #5E9FB9;
 }
 .services .main-content .content-container .tab-content {
   display: none;
@@ -542,10 +575,187 @@ footer .copyright p {
   align-items: flex-end;
   margin-top: 5.5%;
 }
+@media (max-width: 900px) {
+  .services .main-content .content-container .tab-content-selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .services .main-content .content-container .tab-content-selected .tab-content-text h3 {
   margin-bottom: 3%;
+}
+@media (max-width: 900px) {
+  .services .main-content .content-container .tab-content-selected .tab-content-text h3 {
+    margin: 0 0 6%;
+  }
+}
+@media (max-width: 600px) {
+  .services .main-content .content-container .tab-content-selected .tab-content-text h3 {
+    margin: 2% 0 7%;
+  }
 }
 .services .main-content .content-container .tab-content-selected .tab-content-text p {
   line-height: 26px;
   padding-right: 5%;
+}
+@media (max-width: 900px) {
+  .services .main-content .content-container .tab-content-selected .tab-content-text p {
+    padding-right: 0;
+    margin-bottom: 9%;
+  }
+}
+.contact .page-content {
+  margin-top: 4.3%;
+}
+.contact .page-content .main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content {
+    margin: 7% 4.7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact .page-content .main-content .main-section {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .main-section {
+    width: 100%;
+  }
+}
+.contact .page-content .main-content .form-section .form .legend-section {
+  margin-bottom: 10%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form .legend-section h3 {
+    margin-left: 0;
+    margin-bottom: 19%;
+  }
+}
+.contact .page-content .main-content .form-section .form .input-section {
+  margin-top: 5%;
+}
+.contact .page-content .main-content .form-section .form p {
+  font-size: 13px;
+  line-height: 24px;
+}
+@media (max-width: 900px) {
+  .contact .page-content .main-content .form-section .form p {
+    margin-top: 2%;
+    line-height: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form label {
+    line-height: 18px;
+  }
+}
+.contact .page-content .main-content .form-section .form .input-field {
+  width: 96%;
+  font-size: 16px;
+  padding: 2%;
+  border: solid 1px #222222;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  margin-top: 2%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form .input-field {
+    width: 100%;
+  }
+}
+.contact .page-content .main-content .form-section .form .email-field {
+  height: 40px;
+}
+.contact .page-content .main-content .form-section .form select {
+  height: 40px;
+  margin-bottom: 5%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form select {
+    margin-bottom: 4%;
+  }
+}
+.contact .page-content .main-content .form-section .form textarea {
+  height: 135px;
+  margin-bottom: 1%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form textarea {
+    margin-bottom: 3%;
+  }
+}
+.contact .page-content .main-content .form-section .form .radio-section {
+  line-height: 24px;
+  margin-bottom: 6%;
+}
+.contact .page-content .main-content .form-section .form input[type="submit"] {
+  color: #222222;
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  width: 135px;
+  text-align: center;
+  padding: 3% 0;
+  border-radius: 15px;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .contact .page-content .main-content .form-section .form input[type="submit"] {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form input[type="submit"] {
+    width: 100%;
+    margin: 9% 0 4%;
+    padding: 5% 0;
+  }
+}
+.contact .page-content .main-content .form-section .form input[type="submit"]:hover {
+  color: #FFFFFF;
+  background-color: #5E9FB9;
+}
+.contact .page-content .main-content .form-section .form input[type="submit"]:hover a {
+  color: #FFFFFF;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .form-section .form input[type="submit"] {
+    margin-top: 3%;
+  }
+}
+.contact .page-content .main-content .location-section {
+  padding-top: 1%;
+  padding-left: 17%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .location-section {
+    padding-top: 12%;
+    padding-left: 2%;
+  }
+  .contact .page-content .main-content .location-section h3 {
+    margin-left: 0;
+  }
+}
+.contact .page-content .main-content .location-section .locations h3 {
+  font-size: 20px;
+  margin-top: 13%;
+  margin-bottom: 2%;
+}
+@media (max-width: 600px) {
+  .contact .page-content .main-content .location-section .locations h3 {
+    margin-top: 11%;
+  }
+}
+.contact .page-content .main-content .location-section .locations p {
+  font-size: 18px;
+  line-height: 28px;
 }
