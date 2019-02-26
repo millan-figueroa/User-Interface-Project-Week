@@ -172,7 +172,7 @@ p {
 a {
   color: #222222;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 18px;
 }
 @media (min-width: 600px) {
   .img-mobile {
@@ -240,18 +240,21 @@ a {
   justify-content: center;
   align-items: flex-start;
 }
+a.nav-link {
+  font-size: 30px;
+}
 a.nav-link-selected {
   color: #222222;
 }
 a.nav-link:hover {
-  color: aqua;
+  color: #5E9FB9;
 }
 footer {
-  max-width: 1024px;
   width: 100%;
   background: #828282;
   color: #FFFFFF;
-  padding-top: 6%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 @media (max-width: 600px) {
   footer {
@@ -352,7 +355,7 @@ footer .copyright p {
   }
 }
 .page-content {
-  margin: 4.9% 8.3%;
+  margin: 4.9% 21.3%;
 }
 @media (max-width: 600px) {
   .page-content {
@@ -397,8 +400,8 @@ footer .copyright p {
 .page-content .intro-content .intro-section .intro-text .btn {
   color: #222222;
   background-color: #FFFFFF;
-  border: 1px solid #222222;
-  width: 135px;
+  border: 2px solid #222222;
+  width: 175px;
   text-align: center;
   padding: 3% 0;
   border-radius: 15px;
@@ -518,8 +521,8 @@ footer .copyright p {
 .services .main-content .tab-container .tabs .tab-link {
   color: #222222;
   background-color: #FFFFFF;
-  border: 1px solid #222222;
-  width: 135px;
+  border: 2px solid #222222;
+  width: 175px;
   text-align: center;
   padding: 3% 0;
   border-radius: 15px;
@@ -701,8 +704,8 @@ footer .copyright p {
 .contact .page-content .main-content .form-section .form input[type="submit"] {
   color: #222222;
   background-color: #FFFFFF;
-  border: 1px solid #222222;
-  width: 135px;
+  border: 2px solid #222222;
+  width: 175px;
   text-align: center;
   padding: 3% 0;
   border-radius: 15px;
