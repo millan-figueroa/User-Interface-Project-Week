@@ -1,0 +1,74 @@
+// Menu
+
+.menu {
+    width: 100%;
+    background: @nav-bg-color;
+    color: @nav-color;
+    position: fixed;
+    z-index: 1;
+
+    .menu-content {
+        margin: 1.3% 8.3%;
+        .flex-row-btw();
+
+        @media @mobile {
+            margin: 4.3% 4.7%;
+        }
+    }
+
+
+    a {
+        font-weight: bold;
+        color: @nav-color;
+    }
+
+}
+
+// Navigation
+
+.nav-open {
+    display: block;
+}
+
+.nav-open-toggle {
+    display: none;
+}
+
+.nav-close {
+    display: none;
+}
+
+.nav-close-toggle {
+    display: block;
+}
+
+.nav {
+    display: none;
+}
+
+.nav-toggle {
+    .flex-col-center();
+
+    height: 100%;
+    width: 100%;
+    background: @nav-bg-color;
+    opacity: .9;
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-links {
+    .flex-col-center(flex-start);    
+}
+
+a.nav-link {
+    font-size: 30px;
+}
+a.nav-link-selected {
+    color: @gen-color;    
+}
+
+a.nav-link:hover {    
+    color: @btn-bg-color;
+    
+}
